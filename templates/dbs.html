@@ -1,0 +1,25 @@
+<html>
+
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <link rel = "stylesheet" href = "{{url_for('static',filename = 'styles.css' )}}">
+
+    </head>
+ 
+    <body>
+
+        <division class = "container">
+            
+            <h2> <!--h2 etc declares size, h4 is smaller size-->
+                Predicted DBS share price {{r}}
+            </h2>
+
+            <form action = "/main" method = "POST"> <!-- html is frontend, POST is sending from frontend 
+                                                    to backend and GET is from backend to frontend-->
+                <input type = "submit" value = "Main">
+            </form>
+        </division>
+
+    </body>
+
+</html>
